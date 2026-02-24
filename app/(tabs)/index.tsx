@@ -1,6 +1,16 @@
 import React from 'react';
 import { Alert, Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
+/* Code Credits/References:
+    - React native Docummentation: Alert (https://reactnative.dev/docs/alert)
+    - React native Documentation: TouchableOpacity (https://reactnative.dev/docs/touchableopacity)
+    - React native Documentation: Layout with Flexbox (https://reactnative.dev/docs/flexbox)
+    - React native Documentation: Color reference (https://reactnative.dev/docs/colors)
+    - @dewa1345 (https://github.com/dewa1345/Mobile_UI_Layout_For_React)
+    - @YuukiYuna-TOSTW (https://github.com/YuukiYuna-TOSTW/Mobile-UI-Layout-Implementation-React-Native-)
+    - @KeaneKen (https://github.com/KeaneKen/MAD_MobileUIReact)
+*/
+
 const GRID_IMAGES = [
   require('../../assets/images/ferrisWheel.png'),
   require('../../assets/images/goKarts.png'),
@@ -30,7 +40,6 @@ const index = () => {
         </View>
         <View style={{height: '2%', backgroundColor: 'rgb(141, 255, 221))'}} />
 
-        {/* Code credit to mah friend */}
         <View style={styles.gridContainer}>
             {GRID_IMAGES.map((src, index) => (
             <View key={index} style={styles.gridCell}>
