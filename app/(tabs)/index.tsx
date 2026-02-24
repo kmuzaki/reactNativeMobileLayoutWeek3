@@ -93,15 +93,19 @@ const styles = StyleSheet.create({
 
     buttonRowDirection: {
         flexDirection: 'row',
-        justifyContent: 'center',
+        width: '100%',
+        // justifyContent: 'center',
         // width: '60%'
     },
 
     buttonRow1: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
         // width: 200,
         // height: 100,
-        paddingVertical: 20,
-        paddingHorizontal: 65,
+        paddingVertical: 15,
+        // paddingHorizontal: 10,
         backgroundColor: 'rgb(118, 162, 255)',
     },
 
